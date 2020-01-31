@@ -1,0 +1,22 @@
+{
+  "name": "moment2nodeexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontendfinal-install": "npm install --prefix frontendfinal",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "frontendfinal": "npm start --prefix frontendfinal",
+    "dev": "concurrently \"npm run server\" \"npm run frontendfinal\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontendfinal && npm run build --prefix frontendfinal"
+  },
+  "author": "Mimmi Nordquist",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12",
+    "npm": "^6.13.6"
+  }
+}
